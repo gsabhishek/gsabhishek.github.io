@@ -46,16 +46,9 @@
     font-size: 17px;
     border-style: inset;
     cursor: pointer;
-  }
+}
   
-  /* Change the color of links on hover */
-  .navbar a:hover {
+.navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .navbar a.active {
-    background-color: #ddd;
-    color: black;
-  }
+}
