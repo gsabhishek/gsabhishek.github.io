@@ -6,6 +6,14 @@ function openNewPage(pageUrl){
     window.open(pageUrl);
 }
 
-function embed(fileName){
-    window.open(fileName);
-}
+$(document).ready(function(){
+    $("#softwares").click(function(){
+        $("#content").load("softwares/softwares.html #content");
+    });
+    $("#literature").click(function(){
+        $("#content").load("literature/literature.html #content");
+    });
+    $("#notes").click(function(){
+        $("#content").load("notes/notes.html #content");
+    });
+});
