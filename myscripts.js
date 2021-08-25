@@ -16,4 +16,11 @@ $(document).ready(function(){
     $("#notes").click(function(){
         $("#content").load("notes/notes.html #content");
     });
+
+    //Literature
+    $(document).ready(function(){
+        $("#TransparentAlloys").click(function(){
+            $("#content").load("TransparentAlloys/index.html #content");
+        });
+    });
 });
