@@ -20,7 +20,7 @@ $(document).ready(function(){
     //Literature
     $(document).ready(function(){
         $("#TransparentAlloys").click(function(){
-            $("#content").load("TransparentAlloys/index.html #content");
+            $("#content").load("literature/TransparentAlloys/index.html #content");
         });
     });
 });
