@@ -14,13 +14,6 @@ $(document).ready(function(){
         $("#content").load("literature/literature.html #content");
     });
     $("#notes").click(function(){
-        $("#content").load("notes/notes.html #content");
-    });
-
-    //Literature
-    $(document).ready(function(){
-        $("#TransparentAlloys").click(function(){
-            $("#content").load("literature/TransparentAlloys/index.html #content");
-        });
+        $("#content").load("notes/notes.html#content");
     });
 });
