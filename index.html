@@ -1,38 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8">
-<link href='https://fonts.googleapis.com/css?family=Baloo Tamma 2' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link rel="stylesheet" href="styles.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="myscripts.js"></script> 
-<title>Abhishek G.S.</title>
+    <title>Your Name - Academic Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .paper {
+            margin: 15px 0;
+            padding: 15px;
+            background: #fff;
+        }
+        .paper img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <!--Side Bar-->
-    <div class = "sidebar">
-        <div class="logo" onclick="openPage('index.html')"></div>
-        <div class="name" onclick="openPage('index.html')">Abhishek G.S.</div>
-        <div onclick="openPage('index.html')" style="float: left;cursor: pointer;padding:10px;">
-            <i class="ai ai-google-scholar fa-2x"></i>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Your Name</span> Academic Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="papers.html">Papers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div onclick="openNewPage('https:\/\/www.github.com/gsabhishek')" style="float: left;cursor: pointer; padding:10px;">
-            <i class="fa fa-github fa-2x"></i>
-        </div>
-        <div onclick="openNewPage('https:\/\/www.linkedin.com/in/g-s-abhishek-77320b75')" style="float: left;cursor: pointer;padding:10px;">
-            <i class="fa fa-linkedin fa-2x"></i>
-        </div>
+    </header>
+
+    <div class="container">
+        <section id="showcase">
+            <h1>Welcome to My Academic Portfolio</h1>
+            <p>This website showcases my research papers and projects in the field of [Your Field]. Feel free to browse through my work and contact me for collaborations or inquiries.</p>
+        </section>
+
+        <section id="papers">
+            <h2>Selected Papers</h2>
+            <!-- List your papers here -->
+            <div class="paper">
+                <h3>Paper Title 1</h3>
+                <p>Short description of the paper. <a href="#">Read more...</a></p>
+            </div>
+            <!-- Repeat for other papers -->
+        </section>
+
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <!-- Display images from your work -->
+            <img src="path_to_image.jpg" alt="Description of image">
+            <!-- Repeat for other images -->
+        </section>
     </div>
-    <!--Top Navigation Bar-->
-    <div class = "navbar">
-        <a href="#" id="softwares">Softwares</a>
-        <a href="#" id="literature">Literature</a>
-        <a href="#" id="notes">Notes</a>
-    </div>
-    <!--Content-->
-    <div id="content" class="default"></div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
